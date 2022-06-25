@@ -1,0 +1,39 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "detect"
+        }
+    },
+    "plugins": ["react", "react-hooks", "prettier"],
+    "rules": {
+        "react/display-name": 0,
+        "react/no-unescaped-entities": 0,
+        "react/prop-types": 0,
+        "no-undef": 0,
+        "no-console": 0, // console 체크
+        "no-unused-vars": 1, // 사용하지 않는 변수 체크
+        "prettier/prettier": [
+            "error",
+            {
+              "singleQuote": false,
+              "tabWidth": 4,
+              "semi": true,
+              "printWidth": 150,
+              "endOfLine": "auto"
+            }
+          ]
+    }
+}
